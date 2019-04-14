@@ -19,10 +19,9 @@ else {
 }
 
 Set-ItemProperty -Path $registryPath -Name $registry -Value $value
-
 if ($value -eq '1') {
-    $wshell.Popup("Lockscreen Functionality is now disabled.")
+    $wshell.Popup("Lockscreen Functionality is now disabled.",0,"Toggle Lockscreen")
 }
 else {
-    $wshell.Popup("Lockscreen Functionality is now enabled.")
-}
+    $wshell.Popup("Lockscreen Functionality is now enabled.",0,"Toggle Lockscreen")
+} 
